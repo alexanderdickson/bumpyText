@@ -2,7 +2,9 @@
  * bumpyText 1.1
  * -----------------
  * Text that is allergic to the mouse cursor.
- * Please download jQuery easing plugin for best results.
+ * Please include the jQuery Easing plugin for best results.
+ * http://gsgd.co.uk/sandbox/jquery/easing/
+ * 
  * http://www.alexanderdickson.com/
  *
  *
@@ -47,20 +49,13 @@
         options = $.extend(defaults, options);
 
         return this.each(function() {
-
             findText(this, /\S/g, function(node, match) {
-                
                 var element = $('<' + options.charElement + '/>', {
                     'class': options.charClass
                 })[0];
-
-
-                node.splitText(match.index+1);
+                node.splitText(match.index + 1);
                 element.appendChild(node.splitText(match.index));
                 node.parentNode.insertBefore(element, node.nextSibling);
-    
-
-
             });
 
             $(this).find(options.charElement + '.' + options.charClass).each(function() {
@@ -70,7 +65,6 @@
                 });
 
                 $(this).mouseover(function(){
-
                     $(this).animate(
                     {
                         bottom: options.bounceHeight

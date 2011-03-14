@@ -10,7 +10,7 @@ Licensed under the MIT licenses.
 
 A completely useless jQuery plugin that makes characters seem like they are allergic to the mouse pointer.
 
-Please download [jQuery Easing plugin](http://gsgd.co.uk/sandbox/jquery/easing/) for best results.
+Please include the [jQuery Easing plugin](http://gsgd.co.uk/sandbox/jquery/easing/) for best results.
 
 
 ##Usage##
